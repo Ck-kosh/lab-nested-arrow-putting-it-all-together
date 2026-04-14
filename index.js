@@ -1,5 +1,8 @@
-
-function createLoginTracker (userInfo, username, password){
+const userInfo = {
+  username: "user",
+  password: "pass1234"
+}
+function createLoginTracker (userInfo){
   let attemptCount = 0
   return (passwordAttempt) =>(
     attemptCount++;
